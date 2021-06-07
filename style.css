@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  margin: 0;
+}
+
+.outer-container {
+  margin: 0px, 235px;
+}
+
+.logo {
+  margin-right: 2em;
+}
+
+ul {
+  margin-left: 1em;
+}
+
+nav {
+  margin-top: 50px;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-contact {
+  background: #00c1c1;
+  -webkit-box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.08);
+          box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  width: 130px;
+  height: 42px;
+  border: none;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.container::after {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(#071b66), color-stop(30.95%, #10338c), to(#1c53c0));
+  background: linear-gradient(90deg, #071b66 0%, #10338c 30.95%, #1c53c0 100%);
+  width: 150vw;
+  height: 90%;
+  z-index: -10;
+  position: absolute;
+  margin-top: -10em;
+  -webkit-transform: translateX(-300px) translateY(-50px) rotate(-3deg);
+          transform: translateX(-300px) translateY(-50px) rotate(-3deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.inner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
