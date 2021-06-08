@@ -312,17 +312,20 @@ li,
 }
 
 @media (max-width: 500px) {
+  ul {
+    margin-left: 0;
+  }
   .inner-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 400px;
+    max-width: 380px;
   }
   .container::after {
     -webkit-transform: translateY(-500px) translateX(-50px) rotate(-3deg);
             transform: translateY(-500px) translateX(-50px) rotate(-3deg);
-    height: 240vw;
+    height: 280vw;
   }
   .active {
     display: none;
@@ -358,7 +361,7 @@ li,
             align-items: center;
   }
   .nav-button {
-    padding-left: 10em;
+    padding-left: 8em;
   }
   .image > img {
     width: 100%;

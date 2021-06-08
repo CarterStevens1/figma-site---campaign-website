@@ -303,14 +303,17 @@ li,
 
 //Media Query's Start
 @media (max-width: 500px) {
+  ul {
+    margin-left: 0;
+  }
   .inner-container {
     flex-direction: column;
-    max-width: 400px;
+    max-width: 380px;
   }
 
   .container::after {
     transform: translateY(-500px) translateX(-50px) rotate(-3deg);
-    height: 240vw;
+    height: 280vw;
   }
 
   .active {
@@ -338,7 +341,7 @@ li,
   }
 
   .nav-button {
-    padding-left: 10em;
+    padding-left: 8em;
   }
 
   .image > img {
