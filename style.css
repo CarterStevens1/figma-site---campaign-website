@@ -18,6 +18,12 @@ nav {
   margin-top: 50px;
 }
 
+footer {
+  background: -webkit-gradient(linear, left top, right top, from(#071b66), color-stop(30.95%, #10338c), to(#1c53c0));
+  background: linear-gradient(90deg, #071b66 0%, #10338c 30.95%, #1c53c0 100%);
+  width: 100vw;
+}
+
 .nav-button {
   padding-left: 4em;
 }
@@ -46,6 +52,11 @@ li,
   color: #fff;
 }
 
+.outer-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,20 +70,17 @@ li,
   background: -webkit-gradient(linear, left top, right top, from(#071b66), color-stop(30.95%, #10338c), to(#1c53c0));
   background: linear-gradient(90deg, #071b66 0%, #10338c 30.95%, #1c53c0 100%);
   width: 150vw;
-  height: 90%;
+  height: 100vh;
   z-index: -10;
   position: absolute;
   margin-top: -10em;
-  -webkit-transform: translateX(-300px) translateY(-50px) rotate(-3deg);
-          transform: translateX(-300px) translateY(-50px) rotate(-3deg);
+  -webkit-transform: translateX(-300px) translateY(-150px) rotate(-3deg);
+          transform: translateX(-300px) translateY(-150px) rotate(-3deg);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .inner-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -116,6 +124,15 @@ li,
   border-radius: 2.83333px;
 }
 
+.demo-button {
+  border: none;
+  background: #00c1c1;
+  border-radius: 2.83333px;
+  height: 68px;
+  width: 185px;
+  color: #fff;
+}
+
 .small-text {
   margin-top: 3em;
   color: #10338c;
@@ -147,6 +164,7 @@ li,
   font-weight: 900;
   font-size: 30px;
   line-height: 123%;
+  width: 20ch;
 }
 
 .bullets {
@@ -154,18 +172,143 @@ li,
 }
 
 .testimonial {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.08);
           box-shadow: 7px 10px 8px rgba(0, 0, 0, 0.08);
   border-radius: 9px;
   max-width: 400px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .test-line {
-  border: 1px solid #E5E5E5;
+  border: 1px solid #e5e5e5;
   width: 90%;
   margin: 0 auto;
+}
+
+.top-half,
+.bottom-half,
+.testimonial,
+.demo-section,
+.pod,
+.marketing-section {
+  margin-bottom: 2.5em;
+  margin-top: 5em;
+}
+
+.test-title {
+  color: #4c4c4c;
+  font-size: 24px;
+  max-width: 350px;
+  margin: 1em auto;
+}
+
+.test-desc {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 25px;
+  color: #4c4c4c;
+  max-width: 350px;
+  margin: 0.5em auto;
+}
+
+.test-desc,
+.test-small,
+.test-title {
+  max-width: 350px;
+  margin: 1em auto;
+}
+
+.t-one,
+.t-two {
+  padding-bottom: 0.5em;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author > img {
+  height: 100%;
+  margin-right: 1em;
+}
+
+.author-name > * {
+  margin: 0;
+  font-size: 12px;
+}
+
+.demo-desc {
+  font-size: 18px;
+  line-height: 162%;
+  color: #4c4c4c;
+}
+
+.pod {
+  text-align: center;
+}
+
+.pod-title {
+  color: #10338c;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 123%;
+}
+
+.pod-text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 162%;
+  width: 30ch;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.marketing-section {
+  position: relative;
+}
+
+.marketing-section::after {
+  content: "";
+  position: absolute;
+  background-color: #f8f9fc;
+  width: 150%;
+  height: 104%;
+  top: -25px;
+  z-index: -10;
+  left: -100px;
+}
+
+.top-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foot-line {
+  margin-left: 2em;
+  border-top: 1px solid #e5e5e5;
+  width: 50%;
 }
 
 @media (max-width: 500px) {
@@ -177,8 +320,8 @@ li,
     max-width: 400px;
   }
   .container::after {
-    -webkit-transform: translateY(-500px) translateX(-30px) rotate(-3deg);
-            transform: translateY(-500px) translateX(-30px) rotate(-3deg);
+    -webkit-transform: translateY(-500px) translateX(-50px) rotate(-3deg);
+            transform: translateY(-500px) translateX(-50px) rotate(-3deg);
     height: 240vw;
   }
   .active {
@@ -219,6 +362,19 @@ li,
   }
   .image > img {
     width: 100%;
+  }
+  .bottom-half {
+    position: relative;
+  }
+  .bottom-half::after {
+    content: "";
+    background-color: #f8f9fc;
+    position: absolute;
+    width: 115%;
+    height: 105%;
+    z-index: -10;
+    top: -20px;
+    right: -50px;
   }
 }
 
