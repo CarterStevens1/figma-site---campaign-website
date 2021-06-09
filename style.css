@@ -345,6 +345,10 @@ li,
   padding-top: 3em;
 }
 
+.fa-angle-down {
+  margin-left: 5px;
+}
+
 @media (max-width: 500px) {
   ul {
     margin-left: 0;
