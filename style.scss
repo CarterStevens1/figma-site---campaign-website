@@ -22,6 +22,7 @@ nav {
 footer {
   background: linear-gradient(90deg, #071b66 0%, #10338c 30.95%, #1c53c0 100%);
   width: 100vw;
+  color: #fff;
 }
 
 //Global End
@@ -83,7 +84,8 @@ li,
   box-sizing: border-box;
 }
 
-.inner-container {
+.inner-container,
+.footer {
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -293,6 +295,7 @@ li,
 .top-foot {
   display: flex;
   align-items: center;
+  padding-top: 3em;
 }
 
 .foot-line {
@@ -301,12 +304,40 @@ li,
   width: 50%;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-bold {
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.add {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.links > a {
+  color: #fff;
+  padding: 0.5em 0;
+  font-size: 12px;
+  line-height: 27px;
+}
+
+.footer-grid {
+  padding-top: 3em;
+}
+
 //Media Query's Start
 @media (max-width: 500px) {
   ul {
     margin-left: 0;
   }
-  .inner-container {
+
+  .inner-container,
+  .footer {
     flex-direction: column;
     max-width: 380px;
   }
@@ -361,6 +392,21 @@ li,
     z-index: -10;
     top: -20px;
     right: -50px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .globalOffice-add {
+    grid-row: 2;
+  }
+
+  .c-three,
+  .c-four {
+    grid-column: 2;
   }
 }
 
