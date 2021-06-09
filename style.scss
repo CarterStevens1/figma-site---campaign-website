@@ -140,42 +140,58 @@ li,
 
 //Buttons End
 
-.small-text {
-  margin-top: 3em;
-  color: #10338c;
-  font-size: 14px;
-  line-height: 150%;
+//Pod Start
+
+.demo-desc {
+  font-size: 18px;
+  line-height: 162%;
+  color: #4c4c4c;
 }
 
-.section1-text {
-  padding-bottom: 1em;
+.pod {
+  text-align: center;
 }
 
-.highlight-text {
-  color: #00c1c1;
-  margin: 0;
-}
-.main-title {
-  margin-top: 0;
-}
-
-.description-text {
-  width: 40ch;
-  line-height: 1.6em;
-  letter-spacing: 1px;
-}
-
-.sub-titles {
+.pod-title {
   color: #10338c;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 123%;
-  width: 20ch;
 }
 
-.bullets {
-  margin-bottom: 0.5em;
+.pod-text {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 162%;
+  width: 30ch;
+  margin: 0 auto;
+  margin-bottom: 1em;
 }
+
+.inline {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.marketing-section {
+  position: relative;
+}
+
+.marketing-section::after {
+  content: "";
+  position: absolute;
+  background-color: #f8f9fc;
+  width: 150%;
+  height: 104%;
+  top: -25px;
+  z-index: -10;
+  left: -100px;
+}
+//Pods End
+
+//Testimonials Start
 
 .testimonial {
   background: #ffffff;
@@ -244,54 +260,9 @@ li,
   font-size: 12px;
 }
 
-.demo-desc {
-  font-size: 18px;
-  line-height: 162%;
-  color: #4c4c4c;
-}
+//Testimonials End
 
-.pod {
-  text-align: center;
-}
-
-.pod-title {
-  color: #10338c;
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 123%;
-}
-
-.pod-text {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 162%;
-  width: 30ch;
-  margin: 0 auto;
-  margin-bottom: 1em;
-}
-
-.inline {
-  display: flex;
-  justify-content: center;
-  width: 200px;
-  margin: 0 auto;
-}
-
-.marketing-section {
-  position: relative;
-}
-
-.marketing-section::after {
-  content: "";
-  position: absolute;
-  background-color: #f8f9fc;
-  width: 150%;
-  height: 104%;
-  top: -25px;
-  z-index: -10;
-  left: -100px;
-}
-
+//Footer Start
 .top-foot {
   display: flex;
   align-items: center;
@@ -328,6 +299,44 @@ li,
 
 .footer-grid {
   padding-top: 3em;
+}
+//Footer End
+
+.small-text {
+  margin-top: 3em;
+  color: #10338c;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.section1-text {
+  padding-bottom: 1em;
+}
+
+.highlight-text {
+  color: #00c1c1;
+  margin: 0;
+}
+.main-title {
+  margin-top: 0;
+}
+
+.description-text {
+  width: 40ch;
+  line-height: 1.6em;
+  letter-spacing: 1px;
+}
+
+.sub-titles {
+  color: #10338c;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 123%;
+  width: 20ch;
+}
+
+.bullets {
+  margin-bottom: 0.5em;
 }
 
 .fa-angle-down {
