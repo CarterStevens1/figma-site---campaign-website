@@ -504,6 +504,9 @@ li,
     top: -20px;
     left: -20px;
   }
+  .demo-desc {
+    width: 400px;
+  }
 }
 
 @media (min-width: 900px) {
