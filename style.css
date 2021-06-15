@@ -99,6 +99,7 @@ li,
   width: 130px;
   height: 42px;
   border: none;
+  cursor: pointer;
 }
 
 .btn {
