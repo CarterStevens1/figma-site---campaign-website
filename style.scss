@@ -337,12 +337,12 @@ li,
   grid-column: 2;
 }
 
+//Footer End
+
 .test-icon {
   width: 78px;
   height: 78px;
 }
-
-//Footer End
 
 .small-text {
   margin-top: 3em;
@@ -399,6 +399,7 @@ li,
 
 .links > a {
   text-decoration: none;
+  width: fit-content;
 }
 
 @media (max-width: 500px) {
