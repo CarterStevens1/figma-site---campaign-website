@@ -439,7 +439,7 @@ li,
 
   .container::after {
     transform: translateY(-500px) translateX(-50px) rotate(-3deg);
-    height: 130vh;
+    height: 150vh;
   }
 
   .active {
@@ -609,6 +609,8 @@ li,
   .testimonial {
     max-width: 400px;
     margin: 2em auto;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
 
   .footer-grid {
