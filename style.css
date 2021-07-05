@@ -79,19 +79,22 @@ li,
   line-height: 162%;
   font-weight: 500;
   text-transform: uppercase;
-  margin: 0 15px 3em 0; }
+  margin: 0 15px 3em 0;
+  cursor: pointer; }
 
 .contact-btn {
   background-color: #00c1c1;
   border: none;
   background: #00c1c1;
-  border-radius: 2.83333px; }
+  border-radius: 2.83333px;
+  cursor: pointer; }
 
 .learn-btn {
   background-color: transparent;
   border: 1px solid #ffffff;
   box-sizing: border-box;
-  border-radius: 2.83333px; }
+  border-radius: 2.83333px;
+  cursor: pointer; }
 
 .demo-button {
   border: none;
@@ -100,7 +103,8 @@ li,
   height: 68px;
   width: 185px;
   color: #fff;
-  margin: 2em; }
+  margin: 2em;
+  cursor: pointer; }
 
 .pod {
   text-align: center; }
